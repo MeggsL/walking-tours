@@ -9,7 +9,7 @@ import { roboto } from "@/app/lib/fonts";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import LetsGoButton from "@/app/lib/buttons/lets-go-button";
+import LetsGoButton from "@/app/ui/buttons/lets-go-button";
 import Grid from "@mui/material/Grid"; // Grid version 1
 //import "../purple.css";
 import "./globals.css";

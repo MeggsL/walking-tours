@@ -1,9 +1,9 @@
-import React from "react";
-
+"use client";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import YouMustSelect from "../../ui/TourSelectionAlert";
-import "../../../globals.css";
+import "../../globals.css";
+import BottomNavMaps from "../../ui/BottomNavMaps";
+import MapOfLandmarksAndStatues from "../../lib/(maps)/Map-LS";
 
 <html lang="en">
   <head>
@@ -13,9 +13,9 @@ import "../../../globals.css";
   <body></body>
 </html>;
 
-export default function BlueMapOfS() {
+export default function MapOfLandS() {
   return (
-    <Box sx={{ width: 350, pt: 10 }}>
+    <Box>
       <Grid
         item
         xs={12}
@@ -24,7 +24,10 @@ export default function BlueMapOfS() {
         rowSpacing={0}
         padding={0}
       >
-        <YouMustSelect />
+        <MapOfLandmarksAndStatues/>
+      </Grid>
+      <Grid paddingBottom={3}>
+        <BottomNavMaps />
       </Grid>
     </Box>
   );

@@ -1,8 +1,7 @@
-import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import MapInfoCard from "../../purple-components/PurpleyMapInfoCard";
-import "../../../globals.css";
+import MapInfoCard from "../../ui/MapInfoCard";
+import "../../globals.css";
 
 <html lang="en">
   <head>

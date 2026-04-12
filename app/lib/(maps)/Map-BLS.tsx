@@ -17,7 +17,7 @@ export default function MapAll() {
           <Map
             defaultZoom={15}
             defaultCenter={position}
-            mapId={process.env.NEXT_PUBLIC_PURPLE_MAP_ID}
+          mapId={process.env.NEXT_PUBLIC_BLUE_MAP_ID}
           >
       <BuildingMarkers />
       <LandmarkMarkers />

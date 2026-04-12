@@ -1,17 +1,17 @@
 "use client";
-import React from "react";
-import Image from "next/image";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
+
+//import React from "react";
 import { useState } from "react";
-import GetTourSelection from "./TourSelections.js";
+import GetTourSelection from "./tour_selection_form";
+//import "@/app/globals.css";
 
 
 //the parent component of the form process - receives the user tour selection from the child component and processes it to determine which tour to send the user to.
 
 export default function HandleTourSelection({ onSubmit }) {
-  const [state] = useState({}); // State for form data
-
+  
+ const [state] = useState({}); // State for form data
+  //mapping it out
   const handleFormSubmit = (data) => {
     // Handle form submission logic here
     console.log("Form data submitted:", data);
@@ -35,43 +35,8 @@ export default function HandleTourSelection({ onSubmit }) {
       console.log("That didn't work.");
     }
   };
-  //code handling the page content styling
-  return (
-    <Box xs={{ flexgrow: 1, height: "100%" }}>
-      <Grid
-        container
-        spacing={2}
-        justifyContent="center"
-        rowSpacing={0}
-        paddingTop={6}
-      >
-        <Grid
-          container
-          spacing={2}
-          rowSpacing={0}
-          paddingTop={0}
-          justifyContent="center"
-        >
-          <Image
-            src="/pp-welcome-sub-title.png"
-            alt="What would you like to see on your tour?"
-            width={300}
-            height={184}
-            priority
-          />
-        </Grid>
-        <Grid
-          container
-          spacing={2}
-          rowSpacing={0}
-          paddingTop={0}
-          paddingBottom={0}
-          justifyContent="center"
-        >
-          <GetTourSelection formData={state} onSubmit={handleFormSubmit} />
-        </Grid>
-        {/*} <OpenBox /> */}
-      </Grid>
-    </Box>
-  );
-}
+
+
+  // Call form data / state from child component and process it to determine which tour to send the user to.
+  return <GetTourSelection formData={state} onSubmit={handleFormSubmit} />
+  }

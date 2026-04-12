@@ -9,36 +9,19 @@ import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import RouteTwoToneIcon from "@mui/icons-material/RouteTwoTone";
 import HomeTwoToneIcon from "@mui/icons-material/HomeTwoTone";
 import WbSunnyTwoToneIcon from '@mui/icons-material/WbSunnyTwoTone';
-//import { createTheme } from "@mui/material/styles";
+import AccountCircleTwoToneIcon from '@mui/icons-material/AccountCircleTwoTone';
 import CssBaseline from "@mui/material/CssBaseline";
 import Link from "next/link";
-//import Image from "next/image";
 import HelpOutlineTwoToneIcon from "@mui/icons-material/HelpOutlineTwoTone";
 
-export default function BottomNavMaps() {
+export default function BottomNav() {
   const [value, setValue] = React.useState(0);
 
-  // const theme = createTheme({
-  //   components: {
-  //     BottomNavigation,
-  //     MuiButton: {
-  //       styleOverrides: {
-  //         root: ({ ownerState }) => ({
-  //           ...(ownerState.variant === "contained" &&
-  //             ownerState.color === "primary" && {
-  //               backgroundColor: "transparent",
-  //               color: "#fff",
-  //             }),
-  //         }),
-  //       },
-  //     },
-  //   },
-  // });
 
   return (
     <React.Fragment>
       <CssBaseline />
-      <Box sx={{ height: "5vh" }} alignContent={"center"} alignItems={"center"}>
+      <Box sx={{ height: "10vh"}} marginLeft={0} marginBottom={2} alignContent={"center"} alignItems={"center"}>
         <BottomNavigation
           showLabels
           className={"MuiBottomNavigation-root"}
@@ -80,6 +63,15 @@ export default function BottomNavMaps() {
             icon={
               <Link href={"../../weather"}>
                 <WbSunnyTwoToneIcon />
+              </Link>
+            }
+          />
+                [account]
+          <BottomNavigationAction
+            label="Account"
+            icon={
+              <Link href={"../../login"}>
+                <AccountCircleTwoToneIcon />
               </Link>
             }
           />

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
 import BuildingMarkers from "../(markers)/BuildingMarkers";
 import Container from "@mui/material/Container";
@@ -11,16 +11,15 @@ export default function MapOfBuildings() {
   return (
     <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
       <Container fixed>
-        <div style={{ height: "91vh", width: "100" }}>
+        <div style={{ alignItems: "center", height: "91vh", width: "100" }}>
           <Map
             defaultZoom={15}
             defaultCenter={position}
-            mapId={process.env.NEXT_PUBLIC_PURPLE_MAP_ID}
+            mapId={process.env.NEXT_PUBLIC_BLUE_MAP_ID}
           >
-      <BuildingMarkers />
-      <AppUser />
-      <DirectionsBuildings />
-      
+            <BuildingMarkers />
+            <AppUser />
+            <DirectionsBuildings />
           </Map>
         </div>
       </Container>

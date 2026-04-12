@@ -4,14 +4,22 @@
     margin: 0;
     padding: 0;
 }
+
 .App {
-    background: grey;
-    width: 100%;
-    height: 100%;
-    /* padding: 20px; */
-    /* display:inline-flex; */
-    justify-content: center;
+    display: flex;
     align-items: center;
+justify-content: center;
+    position: sticky;
+    background-color: #e4eaf1;
+    min-height: 100vh;
+}
+
+.weather-layout {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    background-color: #e4eaf1;
+    min-height: 100vh;
 }
 
 .weather-app {
@@ -19,36 +27,40 @@
     justify-content: center;
     margin-inline: 2%;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     padding-left: 10%;
     padding-bottom: 10%;
     padding-top: 10%;
     padding-right: 10%;
     min-width: 200px;
-    height: 100%;
-    background: greysmoke;
-    background-size: auto;
-    box-shadow: 0 4px 10px rgba(22, 21, 21, 0.1);
+    min-height: 91vh;
+    background-color: #e4eaf1;
 }
 
 .city {
     font-size: 16px;
     padding: 6px 10px 6px 10px;
     color: dimgrey;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .city-name {
     font-size: 44px;
     color: black;
     margin: 15px 0px 8px 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-kerning: auto;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
 .description {
     font-size: 48px;
     font-weight: 500;
+     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #e91e63;
 }
 
@@ -63,39 +75,39 @@
     font-size: 50px;
     font-weight: 700;
     align-items: center;
-    color:#424242;
+    color: #424242;
 
 }
 
 .feels-like {
     font-weight: 500;
     color: rgb(8, 9, 10);
-    font-size: 26px;
+    font-size: 30px;
     margin-top: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .degfeelslike {
     font-size: 18px;
     font-weight: 700;
-  color: rgb(8, 9, 10);
+    color: rgb(8, 9, 10);
 }
 
 .min-max-temp {
     font-weight: 500;
-  color: rgb(8, 9, 10);
-    font-size: 26px;
+    color: rgb(8, 9, 10);
+    font-size: 30px;
     margin-top: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .degminmax {
     font-size: 18px;
     font-weight: 500;
-     color: rgb(8, 9, 10);
+    color: rgb(8, 9, 10);
 }
 
-.sun-rise-set{
+.sun-rise-set {
     font-weight: 500;
     color: aliceblue;
     font-size: small;

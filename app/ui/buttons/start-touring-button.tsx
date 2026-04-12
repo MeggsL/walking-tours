@@ -1,11 +1,11 @@
 import { ThemeProvider } from "@mui/material/styles";
 import Button from "@mui/material/Button";
-import { PurpleButton } from "@/app/lib/buttons";
+import { BlueButton } from "@/app/lib/button-styles";
 import PlayCircleFilledWhiteTwoToneIcon from "@mui/icons-material/PlayCircleFilledWhiteTwoTone";
 
 function StartTourButton() {
  return (
-    <ThemeProvider theme={PurpleButton}>
+    <ThemeProvider theme={BlueButton}>
       <Button
         variant="contained"
         size="large"

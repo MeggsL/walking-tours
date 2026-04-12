@@ -44,27 +44,26 @@ export default function TheWeather() {
       <div className="weather-app">
         {weather.error && (
           <div className="error-message">
-            <span>What the...</span>
+            <span>Uh oh! Something went wrong. Please refresh your app.</span>
           </div>
         )}
 
         {weather && weather.data && weather.data.main && (
           <div>
-            <div className="city-name">{weather.data.name}</div>
-            <div className="description">
-              {weather.data.weather[0].main}
-             {/*} <needUmbrella />*/}
-            </div>
+            <div>
+              <div className="city-name">{weather.data.name}</div>
+              <div className="description">{weather.data.weather[0].main} </div>
 
-            <div className="icon-temp">
-              <img
-                width={50}
-                height={50}
-                src={"https://openweathermap.org/img/wn/10d@2x.png"}
-                alt=""
-              />
-              {Math.round(weather.data.main.temp)}
-              <sup className="deg">°C</sup>
+              <div className="icon-temp">
+                <img
+                  width={120}
+                  height={120}
+                  src={"https://openweathermap.org/img/wn/10d@2x.png"}
+                  alt=""
+                />
+                {Math.round(weather.data.main.temp)}
+                <sup className="deg">°C</sup>
+              </div>
             </div>
 
             <div className="feels-like">

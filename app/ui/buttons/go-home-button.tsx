@@ -1,13 +1,13 @@
 import { ThemeProvider } from "@mui/material/styles";
 import Button from "@mui/material/Button";
-import { PurpleButton } from "@/app/lib/buttons";
+import { BlueButton } from "@/app/lib/button-styles";
 import HomeTwoToneIcon from "@mui/icons-material/HomeTwoTone";
 
 function GoHomeButton() {
   return (
-    <ThemeProvider theme={PurpleButton}>
+    <ThemeProvider theme={BlueButton}>
       <Button
-        variant="contained"
+        variant="outlined"
         size="large"
         type="Submit"
         startIcon={<HomeTwoToneIcon />}

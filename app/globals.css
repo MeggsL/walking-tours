@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -24,20 +25,29 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
+  background-color: #657b96;
   min-height: 100vh;
-  color: cornsilk;
 }
 
 .topmenu {
   display: flex;
   align-items: center;
   position: sticky;
+}
+
+.selecttours {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  background-color: #e4eaf1;
+  min-height: 100vh;
 }
 
 .weatherbutton {
@@ -68,6 +78,57 @@ body {
   z-index: 2;
   font-family: var(--font-mono);
   color: #6a5579;
+}
+
+.oops-text-box {
+    display: flex;
+    justify-content: center;
+    margin-inline: 0%;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 0%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    padding-right: 0%;
+    min-width: 100%;
+    min-height: 50px;
+    background-color: #657b96;
+}
+
+.oops-text {
+  font-size: 20px;
+  color: rgb(221, 214, 214);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-kerning: auto;
+  align-items: center;
+  text-justify: center;
+  align-content: center;
+  width: 80%;
+}
+
+.login-text {
+  font-size: 20px;
+  color: rgb(5, 1, 14);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-kerning: auto;
+  text-justify: center;
+}
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    margin-inline: 0%;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 0%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    padding-right: 0%;
+    min-width: 100%;
+    min-height: 50px;
+    background-color: #657b96;
 }
 
 .description a {
@@ -299,7 +360,3 @@ body {
     transform: rotate(0deg);
   }
 }
-.purpletours {
-  background-color: 224, 198, 231;
-  
-  }

@@ -2,7 +2,7 @@
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import "../../globals.css";
-import BottomNavMaps from "../../ui/BottomNavMaps";
+import BottomNavMaps from "../../ui/bottom-nav";
 import MapOfBuildingsAndLandmarks from "../../lib/(maps)/Map-BL";
 
 export default function MapOfBandL() {

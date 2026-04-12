@@ -2,7 +2,7 @@
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import "../../globals.css";
-import BottomNavMaps from "../../ui/BottomNavMaps";
+import BottomNavMaps from "../../ui/bottom-nav";
 import MapOfBuildingsAndStatues from "../../lib/(maps)/Map-BS";
 
 <html lang="en">

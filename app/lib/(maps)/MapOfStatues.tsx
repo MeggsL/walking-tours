@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
 import Container from "@mui/material/Container";
 import StatueMarkers from "../(markers)/StatueMarkers";
@@ -15,12 +15,12 @@ export default function MapOfStatues() {
           <Map
             defaultZoom={15}
             defaultCenter={position}
-            mapId={process.env.NEXT_PUBLIC_PURPLE_MAP_ID}
+            mapId={process.env.NEXT_PUBLIC_BLUE_MAP_ID}
           >
             <AppUser />
             <StatueMarkers />
             <StatueDirections />
-            </Map>
+          </Map>
         </div>
       </Container>
     </APIProvider>

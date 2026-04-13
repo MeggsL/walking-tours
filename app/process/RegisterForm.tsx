@@ -78,7 +78,7 @@ export default function RegistrationForm({ onSubmit }) {
     <form onSubmit={handleSubmit}>
       <Container maxWidth="md" fixed>
         <div style={{ alignItems: "center", height: "86dvh", width: "100" }}>
-          <Stack spacing={5} sx={{ alignItems: "center", paddingTop: 5}}>
+          <Stack spacing={5} sx={{ alignItems: "center", paddingTop: 5 }}>
             {/* <Image
               preload={false}
               loading="eager"
@@ -101,7 +101,7 @@ export default function RegistrationForm({ onSubmit }) {
             spacing={1}
             sx={{ paddingTop: 1, paddingBottom: 0, justifyContent: "left" }}
           >
-            <FormControl sx={{ m: 1, width: "25ch" }} >
+            <FormControl sx={{ m: 1, width: "25ch" }}>
               <InputLabel htmlFor="fname">First name</InputLabel>
               <OutlinedInput
                 id="fname"
@@ -109,6 +109,7 @@ export default function RegistrationForm({ onSubmit }) {
                 defaultValue=""
                 label="First name"
                 fullWidth
+                onChange={handleChange}
               />
             </FormControl>
           </Grid>
@@ -120,13 +121,12 @@ export default function RegistrationForm({ onSubmit }) {
             spacing={1}
             sx={{ paddingTop: 1, paddingBottom: 0, justifyContent: "left" }}
           >
-            <FormControl sx={{ m: 1, width: "25ch" }} >
+            <FormControl sx={{ m: 1, width: "25ch" }}>
               <InputLabel htmlFor="lname">Last name</InputLabel>
               <OutlinedInput
                 id="lname"
                 defaultValue=""
                 type="text"
-                value={"".toString()}
                 label="Last name"
                 fullWidth
                 onChange={handleChange}
@@ -139,15 +139,19 @@ export default function RegistrationForm({ onSubmit }) {
             container
             columns={1}
             spacing={1}
-            sx={{ paddingTop: 1, paddingBottom: 0, justifyContent: "left", width:"100%" }}
+            sx={{
+              paddingTop: 1,
+              paddingBottom: 0,
+              justifyContent: "left",
+              width: "100%",
+            }}
           >
-            <FormControl sx={{ m: 1, width: "25ch" }} >
+            <FormControl sx={{ m: 1, width: "25ch" }}>
               <InputLabel htmlFor="lname">Your hometown</InputLabel>
               <OutlinedInput
                 id="hometown"
                 defaultValue=""
                 type="text"
-                value={"".toString()}
                 label="hometown"
                 fullWidth
                 onChange={handleChange}
@@ -162,13 +166,12 @@ export default function RegistrationForm({ onSubmit }) {
             spacing={1}
             sx={{ paddingTop: 1, paddingBottom: 0, justifyContent: "center" }}
           >
-             <FormControl sx={{ m: 1, width: "25ch" }} >
+            <FormControl sx={{ m: 1, width: "25ch" }}>
               <InputLabel htmlFor="lname">Email</InputLabel>
               <OutlinedInput
                 id="email"
                 defaultValue=""
                 type="email"
-                value={"".toString()}
                 label="email"
                 fullWidth
                 onChange={handleChange}
@@ -196,13 +199,13 @@ export default function RegistrationForm({ onSubmit }) {
             spacing={2}
             sx={{ paddingTop: 0, paddingBottom: 2, justifyContent: "center" }}
           >
-            <FormControl sx={{ m: 1, width: "25ch" }} >
+            <FormControl sx={{ m: 1, width: "25ch" }}>
               <InputLabel htmlFor="lname">Password</InputLabel>
               <OutlinedInput
                 id="pw"
                 defaultValue=""
                 type="password"
-                value={"".toString()}
+                // value={"".toString()}
                 label="pw"
                 fullWidth
                 onChange={handleChange}
@@ -225,7 +228,7 @@ export default function RegistrationForm({ onSubmit }) {
                 }
               />
             </FormControl>
-           
+
             {/* <FormControl sx={{ m: 1, width: "25ch" }} variant="outlined">
               <InputLabel>Password</InputLabel>
               <OutlinedInput

@@ -1,6 +1,6 @@
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import MapInfoCard from "../../ui/MapInfoCard";
+import MapInfoCard from "../../process/MapInfoCard";
 import "../../globals.css";
 
 <html lang="en">
@@ -14,18 +14,17 @@ import "../../globals.css";
 export default function PurpleMapInfo() {
   return (
     <div className="body">
-    <Box sx={{width: 350, pt: 10  }}>
-      <Grid
-        item
-        xs={12}
-        sm={6}
-        justifyContent="center"
-        rowSpacing={0}
-        padding={0}
-   >
-<MapInfoCard />
-      </Grid>
-    </Box>
+      <Box sx={{ width: 350, pt: 10 }}>
+        <Grid
+          container
+          sm={6}
+          justifyContent="center"
+          rowSpacing={0}
+          padding={0}
+        >
+          <MapInfoCard />
+        </Grid>
+      </Box>
     </div>
   );
 }

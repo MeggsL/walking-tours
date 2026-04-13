@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-, "app/lib/button-styles.tsx", "app/process/tour_selection_form.js", "app/process/handle_tour_selection.js", "app/tours/page.tsx"  ],
+, "app/lib/button-styles.tsx", "app/process/TourSelectionForm.js", "app/process/HandleTourSelection.js", "app/tours/page.tsx"  ],
   "exclude": ["node_modules"]
 }

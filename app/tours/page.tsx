@@ -2,12 +2,15 @@
 
 import "../globals.css";
 import "../page.module.css";
-import HandleTourSelection from "../process/handle_tour_selection";
-import Image from "next/image";
+import HandleTourSelection from "../process/HandleTourSelection";
+//import Image from "next/image";
 import Container from "@mui/material/Container";
-import Box from "@mui/material/Box";
+//import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid"; // Grid version 1
 import Stack from "@mui/material/Stack";
-import Typography from "@mui/material/Typography";
+//import Typography from "@mui/material/Typography";
+import BottomNav from "@/app/ui/bottom-nav";
+import { Suspense } from "react";
 //import StartTouring from "@/app/ui/StartTouring";
 //import TopMenu from '@/app/ui/top-nav'
 
@@ -21,45 +24,29 @@ import Typography from "@mui/material/Typography";
 
 export default function TakeATour() {
   return (
-    // <div className="body">
-     <div className="selecttours">
-        <Box>
-                {/* <div className=".login-box"> */}
-        {/* <Box sx={{ flexGrow: 1 }}> */}
-          <Container
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              maxWidth: "md",
-            }}
-          >
-            <Stack spacing={4} alignItems="center">
-        
-                <Image
-                  src="/tours-of-belfast.png"
-                  alt="Welcome to your tour!"
-                  width={356}
-                  height={200}
-                  priority
-                />
-           
-              <Typography variant="h6" gutterBottom align="center">
-                Please select what you would like to see on your tour.
-              </Typography>
+    <div className="selecttours">
+      <Container
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          maxWidth: "md",
+        }}
+      >
+        <Stack spacing={0} alignItems="center">
 
-              <Typography variant="subtitle1" gutterBottom align="center">
-                You can select one or all options at once.
-              </Typography>
+          <Grid container paddingTop={2} columns={1} columnSpacing={4}>
+            <Suspense>
+              <HandleTourSelection />
+            </Suspense>
+          </Grid>
 
-              <Stack>
-                <HandleTourSelection />
-              </Stack>
-            </Stack>
-          </Container>
-        
-        </Box>
-      </div>
-    // </div>
+          <Stack useFlexGap>
+            <BottomNav />
+          </Stack>
+
+        </Stack>
+      </Container>
+    </div>
   );
 }

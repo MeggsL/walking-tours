@@ -9,7 +9,7 @@ function StartTourButton() {
       <Button
         variant="contained"
         size="large"
-        type="Submit"
+        type="submit"
         startIcon={<PlayCircleFilledWhiteTwoToneIcon />}
         sx={{ pl: 2, pr: 2, pt: 3, pb: 3 }}
       >

@@ -1,5 +1,5 @@
 import TheWeather from "@/app/weather/GetWeather";
-import BottomNavMaps from "@/app/ui/BottomNavMaps";
+import BottomNav from "@/app/ui/bottom-nav";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 
@@ -25,7 +25,7 @@ export default function DisplayTheWeather() {
            <TheWeather />
       </Grid>
       <Grid paddingBottom={3}>
-        <BottomNavMaps />
+        <BottomNav />
       </Grid>
     </Box>
   );

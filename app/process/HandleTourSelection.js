@@ -2,7 +2,7 @@
 
 //import React from "react";
 import { useState } from "react";
-import GetTourSelection from "./tour_selection_form";
+import GetTourSelection from "./TourSelectionForm";
 //import "@/app/globals.css";
 
 

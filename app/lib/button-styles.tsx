@@ -60,7 +60,7 @@ import { roboto } from "@/app/ui/fonts";
   const BlueGreyButton = createTheme({
     palette: {
       primary: {
-        main: blueGrey[400],
+        main: blueGrey[800],
       },
       secondary: {
         main: blueGrey[600],
@@ -75,7 +75,7 @@ import { roboto } from "@/app/ui/fonts";
   const BlueButton = createTheme({
     palette: {
       primary: {
-        main: blue[400],
+        main: blue[600],
       },
       secondary: {
         main: blue[600],
